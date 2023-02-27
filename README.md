@@ -14,3 +14,5 @@ git status
      git config --global credential.helper store
 pwd afiseaza directorul curent
 
+Tema1: Cum fac sa sterg credentialele
+
