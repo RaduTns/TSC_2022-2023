@@ -8,6 +8,5 @@ tsc_lab3/*.ini
 tsc_lab3/lab01_testbench-interface/*.f
 tsc_lab3/lab01_testbench-interface/*.Identifier
 tsc_lab3/lab01_testbench-interface/*.sv
-tsc_lab3/lab_dut/*.sv
 tsc_lab3/lab_dut/*.Identifier
 tsc_lab3/test/*.Identifier
