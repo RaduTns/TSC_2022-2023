@@ -13,7 +13,7 @@ import instr_register_pkg::*;
   
 
   timeunit 1ns/1ns;
-
+  operand_res rezultat;
   instruction_t iw_reg[0:31];
 
   // Write to the register
@@ -24,30 +24,15 @@ import instr_register_pkg::*;
     end
     else if (load_en) begin
         case (opcode)
-          ADD: begin
-            iw_reg[write_pointer] = '{ADD, operand_a, operand_b, operand_a + operand_b};
-          end
-          PASSA: begin
-            iw_reg[write_pointer] = '{PASSA, operand_a, operand_b, operand_a};
-          end
-          PASSB: begin
-            iw_reg[write_pointer] = '{PASSB, operand_a, operand_b, operand_b};
-          end
-          SUB: begin
-            iw_reg[write_pointer] = '{SUB, operand_a, operand_b, $signed(operand_a - operand_b)};
-          end
-          MULT: begin
-            iw_reg[write_pointer] = '{MULT, operand_a, operand_b, $signed(operand_a * operand_b)};
-          end
-          DIV: begin
-            iw_reg[write_pointer] = '{DIV, operand_a, operand_b, $signed(operand_a / operand_b)};
-          end
-          MOD: begin
-            iw_reg[write_pointer] = '{MOD, operand_a, operand_b, $signed(operand_a % operand_b)};
-          end
-          default: begin
-            iw_reg[write_pointer] = '{opcode, operand_a, operand_b, 0};
-          end
+          ADD: rezultat = operand_a+operand_b;
+          PASSA: rezultat = operand_a;
+          PASSB:rezultat = operand_b;
+          SUB: rezultat = operand_a-operand_b;
+          MULT: rezultat = operand_a*operand_b;
+          DIV: rezultat = operand_a/operand_b;
+          MOD: rezultat = operand_a%operand_b;
+          
+          default: iw_reg[write_pointer] = '{opcode, operand_a, operand_b, rezultat};
         endcase
       end
 
