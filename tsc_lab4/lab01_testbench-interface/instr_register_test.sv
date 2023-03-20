@@ -20,7 +20,7 @@ module instr_register_test
 
   timeunit 1ns/1ns;
 
-  parameter numberOfTransaction = 10;
+  parameter numberOfTransaction = 20;
   int seed = 77777;   //procedura prin care se initializeaza secventa de generare random a numerelor
 
   initial begin
@@ -51,12 +51,12 @@ module instr_register_test
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-    for (int i=0; i<32; i++) begin
+    for (int i=0; i<numberOfTransaction; i++) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
       //@(posedge clk) read_pointer = i;
-      @(posedge clk) read_pointer = $unsigned($urandom())%numberOfTransaction;
+      @(posedge clk) read_pointer = $unsigned($urandom())%32;
       @(negedge clk) print_results;
     end
 
@@ -81,8 +81,8 @@ module instr_register_test
     operand_a     <= $urandom()%16;                 // between -15 and 15
     operand_b     <= $unsigned($urandom())%16;            // between 0 and 15
     opcode        <= opcode_t'($unsigned($urandom())%8);  // between 0 and 7, cast to opcode_t type
-    //write_pointer <= $unsigned($urandom())%32;
-    write_pointer <= temp++;
+    write_pointer <= $unsigned($urandom())%32;
+    //write_pointer <= temp++;
   endfunction: randomize_transaction
 
   function void print_transaction;

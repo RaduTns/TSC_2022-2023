@@ -17,3 +17,11 @@ tsc_lab4/lab01_testbench-interface/*.f
 tsc_lab4/lab01_testbench-interface/*.Identifier
 tsc_lab4/lab_dut/*.Identifier
 tsc_lab4/test/*.Identifier
+tsc_lab5/work
+tsc_lab5/*.wlf
+tsc_lab5/*.ini
+tsc_lab5/lab01_testbench-interface/*.f
+tsc_lab5/lab01_testbench-interface/*.Identifier
+tsc_lab5/lab_dut/*.Identifier
+tsc_lab5/test/*.Identifier
+tsc_lab5/sim
