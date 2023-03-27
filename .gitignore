@@ -25,3 +25,10 @@ tsc_lab5/lab01_testbench-interface/*.Identifier
 tsc_lab5/lab_dut/*.Identifier
 tsc_lab5/test/*.Identifier
 tsc_lab5/sim
+tsc_lab6/*.wlf
+tsc_lab6/*.ini
+tsc_lab6/lab01_testbench-interface/*.f
+tsc_lab6/lab01_testbench-interface/*.Identifier
+tsc_lab6/lab_dut/*.Identifier
+tsc_lab6/test/*.Identifier
+tsc_lab6/sim
