@@ -32,3 +32,9 @@ tsc_lab6/lab01_testbench-interface/*.Identifier
 tsc_lab6/lab_dut/*.Identifier
 tsc_lab6/test/*.Identifier
 tsc_lab6/sim
+tsc_lab7/lab01_testbench-interface/*.f
+tsc_lab7/lab01_testbench-interface/*.Identifier
+tsc_lab7/lab_dut/*.Identifier
+tsc_lab7/test/*.Identifier
+tsc_lab7/sim
+tsc_lab7/work
