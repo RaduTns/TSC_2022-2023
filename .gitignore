@@ -11,7 +11,6 @@ tsc_lab3/SystemVerilog for Verification - A Guide to Learning the Testbench Lang
 tsc_lab3/*.ini
 tsc_lab3/lab01_testbench-interface/*.f
 tsc_lab3/lab01_testbench-interface/*.Identifier
-tsc_lab3/lab01_testbench-interface/*.sv
 tsc_lab3/lab_dut/*.Identifier
 tsc_lab3/test/*.Identifier
 tsc_lab4/work
