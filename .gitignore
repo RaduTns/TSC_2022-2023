@@ -52,3 +52,19 @@ tsc_lab7/SystemVerilog for Verification - A Guide to Learning the Testbench Lang
 tsc_lab7/SystemVerilog for Verification - A Guide to Learning the Testbench Language Features 3rd edition.pdf
 tsc_lab7/lab_dut/instr_register_pkg.svZone.Identifier
 tsc_lab7/lab_dut/instr_register.svZone.Identifier
+tsc_lab6/lab_dut/instr_register_pkg.svZone.Identifier
+tsc_lab6/lab_dut/instr_register.svZone.Identifier
+tsc_lab6/lab01_testbench-interface/expected.logZone.Identifier
+tsc_lab6/lab01_testbench-interface/instr_register_test.sv.bak
+tsc_lab6/lab01_testbench-interface/instr_register_test.svZone.Identifier
+tsc_lab6/lab01_testbench-interface/run.fZone.Identifier
+tsc_lab6/lab01_testbench-interface/tb_ifc.svZone.Identifier
+tsc_lab6/lab01_testbench-interface/top.svZone.Identifier
+tsc_lab6/tools/build.batZone.Identifier
+tsc_lab6/tools/clean.batZone.Identifier
+tsc_lab6/tools/run_test.batZone.Identifier
+tsc_lab6/tools/run.doZone.Identifier
+tsc_lab6/tools/sources.txtZone.Identifier
+tsc_lab6/mylog.txt
+tsc_lab6/SystemVerilog for Verification - A Guide to Learning the Testbench Language Features 3rd edition.pdf
+tsc_lab6/SystemVerilog for Verification - A Guide to Learning the Testbench Language Features 3rd edition.pdfZone.Identifier
